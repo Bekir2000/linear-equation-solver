@@ -12,13 +12,9 @@ A web-based application for solving systems of linear equations using the Gaussi
 - Fraction representation for exact solutions
 - Roman numeral notation for row operations
 
-## Technology Stack
+## Demo
 
-- Frontend: HTML, CSS, JavaScript
-- Math Libraries:
-  - Fraction.js for exact fraction arithmetic
-  - MathJax for LaTeX rendering
-- Backend: Node.js with Express
+![Linear Equation Solver Demo](demo.gif)
 
 ## Installation
 
@@ -46,18 +42,6 @@ A web-based application for solving systems of linear equations using the Gaussi
 2. Enter the coefficients of your system of equations in the matrix
 3. Enter the constants (b vector) in the rightmost column
 4. Click "Solve" to see the step-by-step solution
-
-## Solution Process
-
-The solver implements the following steps:
-
-1. Forward Elimination with Partial Pivoting
-   - Selects the largest pivot for numerical stability
-   - Performs row operations to create an upper triangular matrix
-
-2. Back Substitution
-   - Solves for variables from bottom to top
-   - Provides exact solutions using fractions
 
 ## Example
 
