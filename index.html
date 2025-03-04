@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Equation Solver</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Fraction.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/fractions@1.0.2/Fraction.min.js"></script>
+    <!-- Include MathJax for LaTeX rendering -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Linear Equation Solver</h1>
+        <div class="matrix-input">
+            <div class="size-controls">
+                <label for="matrix-size">Matrix Size:</label>
+                <select id="matrix-size" onchange="updateMatrixSize()">
+                    <option value="2">2 x 2</option>
+                    <option value="3">3 x 3</option>
+                    <option value="4">4 x 4</option>
+                </select>
+            </div>
+            <div id="matrix-container">
+                <!-- Matrix inputs will be generated here -->
+            </div>
+            <div id="input-matrix-preview" class="matrix-preview"></div>
+            <button onclick="solveEquations()" class="solve-btn">Solve</button>
+        </div>
+        <div class="solution-steps" id="solution-steps">
+            <!-- Solution steps will be displayed here -->
+        </div>
+    </div>
+</body>
+</html>
